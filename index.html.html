@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Flex Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+    .parent {
+            display: flex;
+
+            flex-flow: row wrap;
+            
+            justify-content: space-between;
+           
+            border: 2px solid #333;
+           padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+
+            height: 80vh;
+            background-color: #fff;
+        } 
+
+        .item {
+            background-color: #5c5c5c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+          align-self: center;
+        }
+    
+   
+        #item1{
+             
+            flex-grow: 1;
+            background-color: #ff9d00;
+
+            align-self: flex-start;
+        }
+        #item2{
+             
+            flex-grow: 3;
+            background-color: #e90eae;
+            align-self: flex-end;
+        
+
+        }
+        #item3{
+           
+            flex-grow: 2;
+            background-color: #0022ff;
+        }
+        #item4{
+            order:1;
+             flex-basis: 400px;
+            background-color: #04ff00;
+            align-self: center;
+        }
+      
+
+  
+    
+    </style>
+</head>
+
+<body>
+ 
+
+  
+    <div class="parent">
+        <div id="item1" class="item">Item 1</div>
+        <div id="item2" class="item">Item 2</div>
+        <div  id="item3" class="item">Item 3</div>
+        <div  id="item4" class="item">Item 4</div>
+ 
+
+         
+    </div>
+ 
+
+    
+    
+ 
+
+      
+ 
+</body>
+</html>
+
+<!--
+
+      
+
+
+-->
